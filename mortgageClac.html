@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <header class="border-bottom">
+        <a href="index.html" class="text-center text-decoration-none text-dark"> 
+            <h1>Financial Calculators Inc.</h1>
+        </a>
+    </header>
+    <main>
+        <br>
+        <div class="m-3 text-center">
+        <p>Enter Loan Amount:
+            <input type="text" id="principle" placeholder="Insert Principle">
+        </p>
+
+        <p>Enter Intrest Rate (Percent Monthly): 
+            <input type="text" id="intrestRatePercent" placeholder="Intrest Rate">
+        </p>
+
+        <p>Enter Time Period (Annualy): 
+            <input type="text" id="loanLength" placeholder="Loan Length">
+        </p>
+
+        <button type="button" id="calculateMortgage" onclick="calculateMortgage()">Calculate Mortgage</button>
+        <br>
+        <br>
+        <p id="answerText"></p>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
